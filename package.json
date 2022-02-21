@@ -3,9 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "prettify": "pretty --write ."
   },
   "dependencies": {
+    "@apollo/client": "^3.5.9",
     "graphql": "^16.3.0",
     "graphql-request": "^4.0.0",
     "html-react-parser": "^1.4.8",
@@ -17,8 +20,13 @@
     "sass": "^1.49.7"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/introspection": "2.1.1",
+    "@graphql-codegen/typescript": "2.4.5",
+    "@graphql-codegen/typescript-operations": "2.3.2",
+    "@graphql-codegen/typescript-react-apollo": "3.2.8",
     "@types/node": "17.0.4",
-    "@types/react": "17.0.38",
+    "@types/react": "^17.0.39",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
