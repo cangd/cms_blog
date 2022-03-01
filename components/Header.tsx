@@ -6,7 +6,7 @@ const categories = [
   { name: "Web Development", slug: "web-dev" },
 ];
 
-const Header = () => {
+export const Header: React.FC<{}> = (props) => {
   return (
     <div className="container mx-auto mb-8 px-10">
       <div className="inline-block w-full border-b border-blue-500 py-8">

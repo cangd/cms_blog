@@ -3,11 +3,11 @@ import moment from "moment";
 import Link from "next/link";
 import { Post } from "../services/generated/graphql";
 
-interface PostProp {
+interface PostCardProp {
   post: Post;
 }
 
-export const PostCard: React.FC<PostProp> = ({ post }: PostProp) => {
+export const PostCard: React.FC<PostCardProp> = ({ post }: PostCardProp) => {
   console.log(post);
   return (
     <div className="mb-8 rounded-lg bg-white p-0 pb-12 shadow-lg lg:p-8">
